@@ -75,9 +75,9 @@ sheet_name = "Orders"
 
 orders = create_orders_dataframe(sheet_url, sheet_name)
 
-with st.expander("Data ⤵"):
+with st.expander("queue ⤵"):
     st.write("song")
-    st.dataframe(orders)
+    st.dataframe(orders[:5])
 
 
 
